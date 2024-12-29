@@ -1,0 +1,126 @@
+/* App.css */
+.app {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #1f1f1f, #121212); /* Fundo com gradiente */
+  color: #eaeaea; /* Texto mais suave */
+  padding: 20px;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #282828; /* Fundo do cabeçalho */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #76c7c0; /* Cor do título */
+  margin: 0;
+}
+
+/* Estilo do conteúdo principal */
+main {
+  display: flex;
+  flex-direction: column; /* Organização vertical */
+  gap: 20px; /* Espaçamento entre seções */
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between; /* PDF na esquerda e os componentes na direita */
+  gap: 20px;
+}
+
+.pdf-viewer {
+  flex: 2;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.player-narrator-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.player-narrator-container > * {
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* PowerTraits Section */
+.power-traits-container {
+  display: flex;
+  justify-content: space-between; /* Espaçamento uniforme entre os PowerTraits */
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+}
+
+.power-trait {
+  flex: 1;
+  max-width: 30%; /* Limita cada item a ocupar no máximo 30% do contêiner */
+  min-width: 200px; /* Define um tamanho mínimo */
+  margin: 10px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 0;
+  background-color: #282828;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Botões */
+button {
+  background-color: #76c7c0;
+  color: #121212;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #5daaa5;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .pdf-viewer {
+    margin-bottom: 20px;
+  }
+
+  .power-traits-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .power-trait {
+    max-width: 100%;
+  }
+}

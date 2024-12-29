@@ -1,0 +1,99 @@
+.nature-ui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    }
+    .narrator-mode-container h2 {
+        text-align: center; /* Centraliza o texto horizontalmente */
+        margin-bottom: 20px; /* Espaçamento inferior para separação */
+      }
+      
+    
+    .player-button {
+    margin-bottom: 20px;
+    }
+    
+    .player-button button {
+    background-color: #4b5563;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    }
+    
+    .player-button button:hover {
+    background-color: #6b7280;
+    }
+    
+    .player-button button i {
+    font-size: 16px;
+    }
+    
+    .control-box {
+    background-color: #1f2533;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .audio-name {
+    color: #f1f1f1;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    }
+    
+    .control-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    }
+    
+    .control-buttons button {
+    background-color: #4b5563;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    }
+    
+    .control-buttons button:hover {
+    background-color: #6b7280;
+    }
+    
+    .control-buttons button i {
+    font-size: 16px;
+    }
+    
+    .control-buttons input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #4b5563;
+    border-radius: 4px;
+    height: 4px;
+    width: 100px;
+    }
+    
+    .control-buttons input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    }

@@ -1,0 +1,9 @@
+.power-trait iframe {
+    width: 1000%; /* Ajusta a largura ao contêiner */
+    height: 2400px; /* Define uma altura razoável */
+    border: none;
+    transform: scale(0.15); /* Reduz a escala da imagem */
+    transform-origin: top left; /* Define o ponto de escala */
+    overflow: hidden; /* Remove partes fora do contêiner */
+  }
+  

@@ -1,0 +1,94 @@
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+   
+    color: #e0e0e0;
+  }
+  
+  .player-layout {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .audio-list {
+    width: 30%;
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 10px;
+    color: #e0e0e0;
+  }
+  
+  .audio-list h3 {
+    margin-bottom: 10px;
+  }
+  
+  .audio-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .audio-list li {
+    padding: 8px;
+    margin: 5px 0;
+    background: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .audio-list li:hover {
+    background: #0078ff;
+  }
+  
+  .audio-list .active {
+    background: #0078ff;
+    font-weight: bold;
+  }
+  
+  .player {
+    width: 65%;
+    background: rgba(30, 30, 30, 0.8); /* Ajuste a opacidade aqui */
+    padding: 20px;
+    border-radius: 10px;
+}
+  
+  .controls {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+  }
+  
+  .control-btn {
+    background: #0078ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .control-btn:hover {
+    transform: scale(1.1);
+    background: #005bb5;
+  }
+  
+  .progress input {
+    width: 100%;
+  }
+  
+  .volume {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .volume input {
+    margin-left: 10px;
+  }
+  
